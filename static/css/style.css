@@ -1,0 +1,57 @@
+/* Base tooltip styles */
+#tooltip {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 300px;
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Arrow for tooltip above element */
+#tooltip::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    border-width: 8px 8px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
+}
+
+/* Arrow for tooltip below element */
+#tooltip.tooltip-below::after {
+    bottom: auto;
+    top: -8px;
+    border-width: 0 8px 8px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
+}
+
+/* Interactive element styles */
+.hover-word {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.hover-word:hover {
+    transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #tooltip {
+        max-width: 250px;
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
