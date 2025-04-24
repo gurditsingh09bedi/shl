@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Assessment Innovations</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-purple-50 font-[Poppins] min-h-screen">
+    <div class="container mx-auto px-4 py-12">
+        <!-- Main Content -->
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8">
+            <!-- Title Section -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold mb-4 text-gray-800 hover-word" data-info="Next-generation AI technologies revolutionizing talent assessment">
+                    AI-Driven Assessment Innovations
+                </h1>
+                <p class="text-xl text-gray-600 mb-2 hover-word" data-info="Comprehensive suite of AI-powered assessment tools">
+                    Adaptive Testing, NLP, Predictive Analytics, and Ethical AI
+                </p>
+            </div>
+
+            <!-- Interactive Diagram -->
+            <div class="relative mb-16">
+                <div class="w-full h-96 bg-gradient-to-r from-blue-100 to-purple-100 rounded-xl flex items-center justify-center">
+                    <!-- Central AI Hub -->
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <div class="w-32 h-32 bg-blue-500 rounded-full flex items-center justify-center shadow-lg hover-word" data-info="Central AI system coordinating all assessment components">
+                            <i class="fas fa-brain text-4xl text-white"></i>
+                        </div>
+                    </div>
+
+                    <!-- Connected Elements -->
+                    <div class="absolute top-8 left-1/4 transform -translate-x-1/2">
+                        <div class="bg-purple-400 p-4 rounded-lg shadow-md hover-word" data-info="Dynamically adjusts question difficulty based on real-time performance">
+                            <i class="fas fa-tasks text-2xl text-white mb-2"></i>
+                            <p class="text-white font-semibold">Adaptive Testing</p>
+                        </div>
+                    </div>
+
+                    <div class="absolute top-8 right-1/4 transform translate-x-1/2">
+                        <div class="bg-green-400 p-4 rounded-lg shadow-md hover-word" data-info="Advanced language processing for comprehensive evaluation of responses">
+                            <i class="fas fa-language text-2xl text-white mb-2"></i>
+                            <p class="text-white font-semibold">NLP Analysis</p>
+                        </div>
+                    </div>
+
+                    <div class="absolute bottom-8 left-1/4 transform -translate-x-1/2">
+                        <div class="bg-yellow-400 p-4 rounded-lg shadow-md hover-word" data-info="Data-driven insights for predicting candidate success and potential">
+                            <i class="fas fa-chart-line text-2xl text-white mb-2"></i>
+                            <p class="text-white font-semibold">Predictive Analytics</p>
+                        </div>
+                    </div>
+
+                    <div class="absolute bottom-8 right-1/4 transform translate-x-1/2">
+                        <div class="bg-red-400 p-4 rounded-lg shadow-md hover-word" data-info="Ensures fair and unbiased assessment through continuous monitoring">
+                            <i class="fas fa-balance-scale text-2xl text-white mb-2"></i>
+                            <p class="text-white font-semibold">Ethical AI</p>
+                        </div>
+                    </div>
+
+                    <!-- Connecting Lines -->
+                    <svg class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: 0;">
+                        <line x1="25%" y1="20%" x2="50%" y2="50%" class="svg-line"/>
+                        <line x1="75%" y1="20%" x2="50%" y2="50%" class="svg-line"/>
+                        <line x1="25%" y1="80%" x2="50%" y2="50%" class="svg-line"/>
+                        <line x1="75%" y1="80%" x2="50%" y2="50%" class="svg-line"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Feature Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 p-6 rounded-xl shadow-md hover-word" data-info="Intelligent system that adapts test difficulty in real-time based on candidate responses">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-tasks text-2xl text-blue-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-blue-700">Adaptive Testing</h3>
+                    </div>
+                    <p class="text-gray-600">Adjusts question difficulty based on performance</p>
+                </div>
+
+                <div class="bg-purple-50 p-6 rounded-xl shadow-md hover-word" data-info="Advanced language processing for analyzing written and verbal responses">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-language text-2xl text-purple-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-purple-700">Enhanced NLP</h3>
+                    </div>
+                    <p class="text-gray-600">Comprehensive language analysis</p>
+                </div>
+
+                <div class="bg-green-50 p-6 rounded-xl shadow-md hover-word" data-info="Uses machine learning to predict candidate success and identify development areas">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-2xl text-green-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-green-700">Predictive Analytics</h3>
+                    </div>
+                    <p class="text-gray-600">Data-driven talent insights</p>
+                </div>
+
+                <div class="bg-yellow-50 p-6 rounded-xl shadow-md hover-word" data-info="Provides instant, personalized feedback to enhance the learning experience">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-comments text-2xl text-yellow-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-yellow-700">Real-Time Feedback</h3>
+                    </div>
+                    <p class="text-gray-600">Instant performance analysis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tooltip Container -->
+    <div id="tooltip" class="fixed hidden bg-gray-900 text-white p-4 rounded-lg shadow-lg max-w-xs z-50">
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
